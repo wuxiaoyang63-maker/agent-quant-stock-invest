@@ -1,0 +1,29 @@
+[project]
+name = "agent-quant-stock-invest"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "kimtth"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "agent-framework (>=1.0.0b251007,<2.0.0)",
+    "langchain-openai>=1.0.3",
+    "langgraph>=1.0.3",
+    "matplotlib>=3.10.6",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "pymongo==4.5.0",
+    "python-dotenv>=1.1.1",
+    "ta>=0.11.0",
+    "yfinance>=0.2.66",
+]
+
+[tool.uv]
+package = false
+prerelease = "if-necessary-or-explicit"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
